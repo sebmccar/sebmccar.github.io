@@ -6,8 +6,8 @@ h1, h2, h3, h4, h5, h6, p {
 body {
     margin: 0;
     background-color: #003B5C;
-
 }
+
 .navBar {
     background-color: inherit;
     margin: 0em;
@@ -43,9 +43,6 @@ body {
     text-decoration: none;
 }
 
-#icon {
-    display: none;
-}
 
 .current-img {
     margin-left: 0;
@@ -201,7 +198,12 @@ footer {
     }
 
     body {
-        width: 100%;
+        width: auto;
+    }
+
+    #nav {
+        margin: 0;
+        padding: 0;
     }
 
     .navBar {
@@ -209,12 +211,20 @@ footer {
         height: 200px;
     }
 
-    .navBar h1 {
-        clear: both;
+    #photo-scroll {
+        display: none;
     }
 
-    #icon {
+    .wrapper {
         display: block;
+        width: 400px;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .container-1 {
+        padding: 0;
+        margin: 0;
     }
 
     .footer {
