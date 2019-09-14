@@ -20,7 +20,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 15pt;
     color: white;
-    clear: both;
+  
 }
 
 .navBar h1 {
@@ -63,61 +63,83 @@ body {
     }
 }
 
-#photoscroll {
-    background-color: gainsboro;
+#photo-scroll {
+    background-color: #2774AE;
+    padding: 0;
+    margin: 0;
 }
 
 #photo-scroll img {
     margin: 0;
-    background-color: #F5F5F5;
+    padding: 0;
+}
 
+.current-img {
+    margin: 0;
+    padding: 0;
 }
 
 .wrapper {
     width: 100%;
-    margin-top: -1em;
-    padding-bottom: 1em;
-    padding-top: 1.5em;
-    background-color: gainsboro;
+    margin: 0;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    background-color:#8BB8E8;
 }
 
-.container {
+.container-1 {
+    width: 100%;
+    margin: 0;
+    background-color: #2774AE;
+
+}
+
+.container-2 {
+    width: 100%;
     margin: auto;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+    background-color: #003B5C;
 }
 
-.item {
-    border: 1px solid grey;
-    border-radius: 5px;
-    box-shadow: 1px 1px grey;
-    margin: 20px;
-    flex: 1;
-    padding: 1em;
+.item-1 {
+    background-color: #2774AE;
+    width: 60%;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 8em;
+    padding-bottom: 8em;
     text-align: center;
     font-size: 14pt;
 }
 
-.item h2 {
-    font-size: 22pt;
-    color: #003B5C;
+.item-1 h2 {
+    font-size: 30pt;
+    color: white;
+}
+
+.item-1 p {
+    font-size: 18pt;
+    color: white;
 }
 
 .item-2 {
-    border: 1px solid grey;
-    border-radius: 5px;
-    box-shadow: 1px 1px grey;
-    margin: 20px;
-    flex: 2;
-    padding: 1em;
+    background-color: #003B5C;
+    width: 60%;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 8em;
+    padding-bottom: 8em;
     text-align: center;
     font-size: 14pt;
 }
 
 .item-2 h2 {
-    font-size: 22pt;
-    color: #003B5C;
+    font-size: 30pt;
+    color: white;
+}
+
+.item-2 p {
+    font-size: 18pt;
+    color: white;
 }
 
 .break {
@@ -130,7 +152,12 @@ body {
         width: 100%;
     }
     .item, .item-2 {
-        margin: 8px;
+        padding: 4em;
+        margin: auto;
+    }
+
+    .item-2 {
+        padding: 7em 0;
     }
    
 }
@@ -139,24 +166,33 @@ footer {
     margin: 0;
     color: white;
     background-color: inherit;
-    height: 80px;
+    height: 100px;
 
 }
 
 .footer {
-    margin: 1em 0em 0em 0em;
-    padding-top: 1.5em;
+
+    padding: 2.2em .5em 0em .5em;
     background-color: inherit;
     width: 60%;
-    margin: auto;
     display: flex;
     justify-content: space-around;
-    align-items: normal;
+    margin: auto;
     font-size: 14pt;
 }
 
 .footer a {
     flex-grow: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        width: 100%;
+    }
+
+    footer 
+        width: 100%;
+    }
 }
 
 
